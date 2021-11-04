@@ -1,0 +1,124 @@
+.carta3{
+    position: relative;
+    width: 62%;
+    height: 400px;
+    background: lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    margin-top: 50px;
+    margin-right: 140px;
+    justify-self: right;
+    float: left;
+}
+
+.carta3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carta3 .imgCarta{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    transition: 1s;
+    padding-left: 50px;
+}
+
+.carta3:hover .imgCarta{
+    top: 0%;
+    transform: translateY(25%);
+    align-self: center;
+}
+
+.carta3 .imgCarta img{
+    top: 30%;
+    left: 30%;
+    width: 210px;
+}
+
+.carta3 .contCarta{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+    text-decoration: none;
+    color: black;
+}
+
+.carta3 .contCarta h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carta3:hover .contCarta{
+    height: 100px;
+}
+
+.carta3:hover .contCarta h2{
+    opacity: 100;
+    visibility: visible;
+}
+
+.carta3:hover{
+    background: rgb(160, 160, 160);
+    top: 0%;
+    transform: translateY(1%);
+    align-self: center;
+}
+
+@media (max-width: 700px){
+    .carta3{
+        position: relative;
+        width: 95%;
+        height: 400px;
+        background: lightgray;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 5px;
+        margin-left: 140px;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000){
+    .carta3{
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background: lightgray;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 5px;
+        margin-left: 140px;
+        margin-right: 20px;
+        justify-self: center;
+        float: left;
+    }
+}
+
+@media (min-width: 1000) and (max-width: 1350px){
+    .carta3{
+        position: relative;
+        width: 95%;
+        height: 400px;
+        background: lightgray;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 5px;
+        margin-left: 140px;
+        justify-self: center;
+        float: left;
+    }
+}

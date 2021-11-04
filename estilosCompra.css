@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+}
+
+#container{
+    width: 95%;
+    margin: 0px auto;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav{
+    background: lightgray;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+    background: lightgray;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav a:hover{
+    background: black;
+    color: white;
+}
+
+a:active{
+    transform: translateY(-4px);
+}
+
+.clearfix{
+    clear: both;
+}
+
+footer{
+    border-top: 1px solid black;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+footer li{
+    display: inline-block;
+}
+
+footer p{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 75px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#containerCartas{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#boxH2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 700px){
+    #containerCartas{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+
+    nav{
+        background: lightgray;
+        margin-bottom: 15px;
+        display: inline;
+        width: 50%;
+        height: 50px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+    #containerCartas{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav{
+        background: lightgray;
+        margin-bottom: 15px;
+        display: inline;
+        width: 50%;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1350px){
+    #containerCartas{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav{
+        background: lightgray;
+        margin-bottom: 15px;
+        display: inline;
+        width: 50%;
+        height: 50px;
+    }
+}
